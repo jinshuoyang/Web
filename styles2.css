@@ -1,0 +1,71 @@
+/* 基本样式设置 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2; /* 页面背景颜色 */
+}
+
+/* 部门样式 */
+.tech-dept {
+    background-color: #e0f7e9; /* 浅绿色背景 */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.marketing-dept {
+    background-color: #e3f2fd; /* 浅蓝色背景 */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hr-dept {
+    background-color: #ffe0b2; /* 浅橙色背景 */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* ID选择器样式 */
+#special-employee {
+    border: 2px solid #8e24aa; /* 紫色实线边框 */
+    background-color: #f5f5f5; /* 浅灰色背景 */
+}
+
+/* 后代选择器 */
+.tech-dept .employee-card,
+.marketing-dept .employee-card,
+.hr-dept .employee-card {
+    color: #424242; /* 深灰色字体 */
+    padding: 10px; /* 内边距 */
+    border-bottom: 1px solid #e0e0e0; /* 浅灰色底部边框 */
+}
+
+/* 并集选择器 */
+.tech-dept, .marketing-dept {
+    font-family: Arial, sans-serif; /* 无衬线字体 */
+    line-height: 1.5; /* 行高 */
+}
+
+/* 伪类选择器 */
+.employee-card {
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+}
+
+.employee-card:hover {
+    background-color: #fff9c4; /* 悬停时背景颜色 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+/* 奇偶行背景色 */
+.employee-card:nth-child(odd) {
+    background-color: #f5f5f5; /* 奇数项背景色 */
+}
+
+/* 高绩效员工样式 */
+.high-rating {
+    font-weight: bold; /* 加粗 */
+}
+.high-rating:hover {
+    color: #ffd700; /* 悬停时字体颜色金色 */
+    text-decoration: underline; /* 添加下划线 */
+}
